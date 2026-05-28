@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>산본도서관 프린터 이용 가이드</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* 스크롤바 제거, 전체화면 이미지용 */
+            background-color: #000; /* 이미지 외곽 배경색 */
+        }
+        .guide-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+        .guide-image {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain; /* 이미지 비율 유지하며 중앙 배치 */
+            -ms-interpolation-mode: bicubic; /* 이미지 품질 유지 (IE) */
+        }
+    </style>
+</head>
+<body>
+    <div class="guide-container">
+        <img src="my-guide.jpg" alt="프린터 이용 가이드" class="guide-image">
+    </div>
+</body>
+</html>
